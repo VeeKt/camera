@@ -10,7 +10,6 @@
 		556C998720476D030012C571 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C998620476D030012C571 /* AppDelegate.m */; };
 		556C999020476D030012C571 /* Camera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 556C998E20476D030012C571 /* Camera.xcdatamodeld */; };
 		556C999220476D030012C571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556C999120476D030012C571 /* Assets.xcassets */; };
-		556C999520476D030012C571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556C999320476D030012C571 /* LaunchScreen.storyboard */; };
 		556C999820476D030012C571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C999720476D030012C571 /* main.m */; };
 		556C99A220476D040012C571 /* CameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C99A120476D040012C571 /* CameraTests.m */; };
 		556C99AD20476D040012C571 /* CameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C99AC20476D040012C571 /* CameraUITests.m */; };
@@ -40,7 +39,6 @@
 		556C998620476D030012C571 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		556C998F20476D030012C571 /* Camera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Camera.xcdatamodel; sourceTree = "<group>"; };
 		556C999120476D030012C571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		556C999420476D030012C571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556C999620476D030012C571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556C999720476D030012C571 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		556C999D20476D040012C571 /* CameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,14 +99,10 @@
 		556C998420476D030012C571 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				556C99BD20476DC70012C571 /* ViewControllers */,
-				556C998520476D030012C571 /* AppDelegate.h */,
-				556C998620476D030012C571 /* AppDelegate.m */,
-				556C999120476D030012C571 /* Assets.xcassets */,
-				556C999320476D030012C571 /* LaunchScreen.storyboard */,
 				556C999620476D030012C571 /* Info.plist */,
-				556C999720476D030012C571 /* main.m */,
-				556C998E20476D030012C571 /* Camera.xcdatamodeld */,
+				556C99BF20476F460012C571 /* AppDelegate */,
+				556C99BE20476F2D0012C571 /* Other */,
+				556C99BD20476DC70012C571 /* ViewControllers */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -138,6 +132,25 @@
 				556C99BB20476D670012C571 /* VYKMainViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		556C99BE20476F2D0012C571 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				556C999120476D030012C571 /* Assets.xcassets */,
+				556C999720476D030012C571 /* main.m */,
+				556C998E20476D030012C571 /* Camera.xcdatamodeld */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		556C99BF20476F460012C571 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				556C998520476D030012C571 /* AppDelegate.h */,
+				556C998620476D030012C571 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +259,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556C999520476D030012C571 /* LaunchScreen.storyboard in Resources */,
 				556C999220476D030012C571 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,17 +321,6 @@
 			targetProxy = 556C99A920476D040012C571 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		556C999320476D030012C571 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				556C999420476D030012C571 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		556C99AF20476D040012C571 /* Debug */ = {

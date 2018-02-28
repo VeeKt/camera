@@ -14,6 +14,7 @@
 		556C99A220476D040012C571 /* CameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C99A120476D040012C571 /* CameraTests.m */; };
 		556C99AD20476D040012C571 /* CameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C99AC20476D040012C571 /* CameraUITests.m */; };
 		556C99BC20476D670012C571 /* VYKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C99BB20476D670012C571 /* VYKMainViewController.m */; };
+		556C99C1204770F20012C571 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 556C99C0204770F20012C571 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		556C99AE20476D040012C571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		556C99BA20476D670012C571 /* VYKMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VYKMainViewController.h; sourceTree = "<group>"; };
 		556C99BB20476D670012C571 /* VYKMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VYKMainViewController.m; sourceTree = "<group>"; };
+		556C99C0204770F20012C571 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		556C997920476D030012C571 = {
 			isa = PBXGroup;
 			children = (
+				556C99C0204770F20012C571 /* Default-568h@2x.png */,
 				556C998420476D030012C571 /* Camera */,
 				556C99A020476D040012C571 /* CameraTests */,
 				556C99AB20476D040012C571 /* CameraUITests */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				556C999220476D030012C571 /* Assets.xcassets in Resources */,
+				556C99C1204770F20012C571 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

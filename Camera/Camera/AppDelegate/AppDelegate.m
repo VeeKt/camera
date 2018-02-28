@@ -7,17 +7,53 @@
 //
 
 #import "AppDelegate.h"
+#import "VYKMainViewController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) VYKMainViewController *rootViewController;
+@property (nonatomic, strong) UINavigationController *navigationControloler;
 
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+#pragma  mark - app delegate metods
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [self initWindow];
     
     return YES;
+}
+
+
+#pragma mark - init navigation controller
+
+- (void)initNavigationController
+{
+    self.rootViewController = [[VYKMainViewController alloc]
+                               initWithNibName:nil bundle:nil];
+    self.navigationControloler = [[UINavigationController alloc]
+                                  initWithRootViewController:self.rootViewController];
+    
+    self.window.rootViewController = self.navigationControloler;
+    [self.window addSubview:self.navigationControloler.view];
+}
+
+
+# pragma mark - init window
+
+- (void)initWindow
+{
+    self.window = [[UIWindow alloc]
+                   initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    self.window.tintColor = [UIColor blackColor];
+    
+    [self initNavigationController];
+    [self.window makeKeyAndVisible];
 }
 
 

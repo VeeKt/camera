@@ -15,6 +15,7 @@
 		556C99AD20476D040012C571 /* CameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C99AC20476D040012C571 /* CameraUITests.m */; };
 		556C99BC20476D670012C571 /* VYKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C99BB20476D670012C571 /* VYKMainViewController.m */; };
 		556C99C1204770F20012C571 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 556C99C0204770F20012C571 /* Default-568h@2x.png */; };
+		556C99C7204DA0270012C571 /* VYKStreamingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 556C99C6204DA0270012C571 /* VYKStreamingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		556C99BA20476D670012C571 /* VYKMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VYKMainViewController.h; sourceTree = "<group>"; };
 		556C99BB20476D670012C571 /* VYKMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VYKMainViewController.m; sourceTree = "<group>"; };
 		556C99C0204770F20012C571 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		556C99C5204DA0270012C571 /* VYKStreamingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VYKStreamingViewController.h; sourceTree = "<group>"; };
+		556C99C6204DA0270012C571 /* VYKStreamingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VYKStreamingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,9 @@
 		556C998420476D030012C571 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				556C99C4204CA0160012C571 /* Models */,
+				556C99C3204C9FF70012C571 /* ONVIF */,
+				556C99C2204C9FCC0012C571 /* RTSP */,
 				556C999620476D030012C571 /* Info.plist */,
 				556C99BF20476F460012C571 /* AppDelegate */,
 				556C99BE20476F2D0012C571 /* Other */,
@@ -133,6 +139,8 @@
 			children = (
 				556C99BA20476D670012C571 /* VYKMainViewController.h */,
 				556C99BB20476D670012C571 /* VYKMainViewController.m */,
+				556C99C5204DA0270012C571 /* VYKStreamingViewController.h */,
+				556C99C6204DA0270012C571 /* VYKStreamingViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -154,6 +162,27 @@
 				556C998620476D030012C571 /* AppDelegate.m */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		556C99C2204C9FCC0012C571 /* RTSP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RTSP;
+			sourceTree = "<group>";
+		};
+		556C99C3204C9FF70012C571 /* ONVIF */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ONVIF;
+			sourceTree = "<group>";
+		};
+		556C99C4204CA0160012C571 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				556C999020476D030012C571 /* Camera.xcdatamodeld in Sources */,
+				556C99C7204DA0270012C571 /* VYKStreamingViewController.m in Sources */,
 				556C999820476D030012C571 /* main.m in Sources */,
 				556C998720476D030012C571 /* AppDelegate.m in Sources */,
 				556C99BC20476D670012C571 /* VYKMainViewController.m in Sources */,
